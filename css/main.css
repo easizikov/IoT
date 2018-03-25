@@ -1,6 +1,6 @@
 html {
     color: #222;
-    background-color: #EDEBEC;
+    background-color: #f7f5f6;
     font-size: 1.2em;
     line-height: 1.4;
     font-family: 'Neucha', cursive;
@@ -17,16 +17,15 @@ html {
 }
 
 body {
-//    width: 960px;
     margin: 0 auto;
 }
 
 #title {
-    position: relative;
+    float: left;
 }
 
 .piche {
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 200px;
@@ -40,7 +39,7 @@ body {
 }
 
 #tel {
-    color: #4694BD;
+    color: #FE9900;
     font-size: 25px;
     font-weight: bold;
     position: absolute;
@@ -49,7 +48,7 @@ body {
 }
 
 .menu {
-    //background-color: #358815;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     align-content: center;
@@ -57,17 +56,18 @@ body {
 }
 
 .item {
-    background-color: #358815;
+    //background-color: #4694BD;
+    border-bottom: 5px solid #FE9900;
     width: 150px;
     height: 150px;
     position: relative;
     margin: auto 10% 25px 10%;
     cursor: pointer;
-    //border-radius: 50%;
+    border-radius: 2%;
 }
 
 .item:hover {
-    border-radius: 50%;
+    border-radius: 30%;
     transition: 0.1s;
 }
 
@@ -91,9 +91,9 @@ span {
 }
 
 #shema {
-    background-image: url(../img/shema.jpg);
+    background-image: url(../img/shema.png);
     background-repeat: no-repeat;
-    min-width: 600px;
+    min-width: 100%;
     min-height: 350px;
     margin: 0 0 0 calc(50% - 300px);
 }
@@ -108,8 +108,7 @@ a {
     text-decoration: none;
 }
 
-/*
-button  {
+.button  {
     font-weight: 700;
     color: white;
     text-decoration: none;
@@ -118,22 +117,27 @@ button  {
     background: rgb(64,199,129);
     box-shadow: 0 -3px rgb(53,167,110) inset;
     transition: 0.2s;
-    position: absolute;
-    top: 20px;
-    left: 650px;
     z-index: 2;
 }
-button:hover  {
+.button:hover  {
     background: rgb(53, 167, 110);
 }
 
-button:active  {
+.button:active  {
     background: rgb(33,147,90);
     box-shadow: 0 3px rgb(33,147,90) inset;
 }
-*/
 
-@media (max-width: 976px) and (min-width: 601px) {
+@media (max-width: 1000px) and (min-width: 601px) {
+    #title {
+        position: relative;
+        float: none;
+    }
+   .menu {
+        margin-top: 0;
+        overflow: hidden;
+    }
+
     body {
         width: 100%;
     }
@@ -146,11 +150,28 @@ button:active  {
       min-width: 150px;
         display: block;
     }
+
+    #shema {
+        background-image: url(../img/shema_small.png);
+        background-repeat: no-repeat;
+        min-width: 450px;
+        min-height: 350px;
+        margin: 0 0 0 calc(50% - 224px);
+    }
+
 }
 
 @media (max-width: 600px) {
     body {
         width: 100%;
+    }
+
+    #title {
+        position: relative;
+        float: none;
+    }
+    .menu {
+        margin-top: 0px;
     }
 
     #header-text {
@@ -174,12 +195,9 @@ button:active  {
     }
 
     #shema {
-        background-image: url(../img/shema_small.jpg);
+        background-image: url(../img/shema_supersmall.png);
         background-repeat: no-repeat;
-        min-width: 100%;
-        min-height: 250px;
-        margin: 0;
+        min-width: 350px;
+        margin: 0 0 0 calc(50% - 174px);
     }
-
-
 }

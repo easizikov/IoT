@@ -28,16 +28,52 @@
         </div>
 
         <div class="menu">
-            <div class="item first"><img src="img/rozetka.jpg" alt="" /></div>
-            <div class="item"><img src="img/lamps.jpg" alt="" /></div>
-            <div class="item last"><img src="img/sonoff.jpg" alt="" /></div>
+            <div class="item first"><img src="img/rozetka.png" alt="" /></div>
+            <div class="item"><img src="img/lamps.png" alt="" /></div>
+            <div class="item last"><img src="img/sonoff.png" alt="" /></div>
         </div>
         <div class="text">Предоставляем Вам возможность управлять ваши домашними устройствами из любой точки земли.
             Можем рассмотреть нестандартные запросы на автоматизацию. Вы управляете устройствами из <a href="#">личного кабинета</a>.</div>
         <div id="shema"></div>
+        <footer>
+            Для чого, чтобы поспользоваться наши услугами, нужно зарегистрироваться в личном кабинете, для этого сообщите нам, как вас зовут и ваш телефонный номер. Мы с вами оперативно свяжемся.
+            <form><input type="text" placeholder="Ваше имя?"><input type="text" maxlength="11" placeholder="Ваш телефон?">
+                <br><input type="button" value="Отправить" class="button"></form>
+          <!--  <canvas id="drawingCanvas" width="300" height="140">
+                <script>
+                    var canvas;
+                    var context;
+
+                    window.onload = function() {
+                        // Определение контекста рисования
+                        canvas = document.getElementById("drawingCanvas");
+                        context = canvas.getContext("2d");
+
+                        // Обновляем холст через 0.02 секунды
+                        setTimeout("drawFrame()", 20);
+                    }
+
+                    function drawFrame() {
+
+                        // Вызываем метод beginPath(), чтобы убедиться,
+                        // что мы не рисуем часть уже нарисованного содержимого холста
+                        context.beginPath();
+
+                        // Рисуем квадрат размером 10x10 пикселов в текущей позиции
+                        context.moveTo(150, 20);
+                        context.strokeStyle = "#ff11e0";
+                        context.lineWidth = 2;
+                        context.lineTo(120, 20);
+                        context.lineTo(120, 50);
+                        context.stroke();
+
+                        // Рисуем следующий кадр через 20 миллисекунд
+                        setTimeout("drawFrame()", 20);
+                    }
+                </script>
+            </canvas>
+-->
+        </footer>
     </body>
-    <footer>
-        Для чого, чтобы поспользоваться наши услугами, нужно зарегистрироваться в личном кабинете, для этого сообщите нам, как вас зовут и ваш телефонный номер. Мы с вами оперативно свяжемся.
-        <form><input type="text" placeholder="Ваше имя?"><input type="text" placeholder="Ваш телефон?"><input type="button"></form>
-    </footer>
+
 </html>
